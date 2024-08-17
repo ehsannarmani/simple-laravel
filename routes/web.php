@@ -23,6 +23,8 @@ Route::prefix('/admin')->group(function () {
     Route::delete("/articles/delete/{id}",[ArticleController::class,'delete']);
     Route::get('/article/edit/{id}', [ArticleController::class,'edit']);
     Route::put('/article/edit/{id}', [ArticleController::class,'update']);
+
+
 });
 
 
