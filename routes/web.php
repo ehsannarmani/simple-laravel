@@ -25,6 +25,7 @@ Route::prefix('/admin')->group(function () {
     Route::put('/article/edit/{id}', [ArticleController::class,'update']);
 
 
+
 });
 
 
