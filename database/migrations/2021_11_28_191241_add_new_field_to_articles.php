@@ -14,7 +14,7 @@ class AddNewFieldToArticles extends Migration
     public function up()
     {
         Schema::table('articles', function (Blueprint $table) {
-            $table->text('author')->default('ali')->after('body')/*->change()*/;
+            $table->text('author')->after('body')/*->change()*/;
         });
     }
 
